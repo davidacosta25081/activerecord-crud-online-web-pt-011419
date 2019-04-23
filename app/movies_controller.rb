@@ -7,7 +7,7 @@ def can_be_instantiated_and_then_saved
 end
 
 def can_be_created_with_a_hash_of_attributes
-  
+
   attributes = {
       title: "The Sting",
       release_date: 1973,
@@ -55,7 +55,7 @@ end
 
 def can_find_using_where_clause_and_be_sorted
   movie = Movie.where("release_date > 2002").order(release_date: :desc)
-  
+
 end
 
 def can_be_found_updated_and_saved
